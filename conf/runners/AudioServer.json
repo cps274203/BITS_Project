@@ -1,0 +1,6 @@
+{
+	"name": "Audio Server",
+	"description": "Click on Execute to Redirect to Audio Server",
+	"working_directory": "",
+    "redirect": "Play.html"
+}

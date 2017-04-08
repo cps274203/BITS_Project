@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>RTP Analysis</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/materialize.min.js"></script>
+    <script src="js/libs/hashtable.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body onload="onLoad()">
+
+<div class="container-fluid" id="mainPanel">
+    <div id="scriptsPanel">
+        <div id="scriptsList">
+            <div id="listHeader">
+                <h2 class="header" id="serverHeader">List Scripts</h2>
+
+                <div id="searchPanel">
+                    <div>
+                        <input type="search" id="searchField" name="searchField" autocomplete="off"
+                               placeholder="Search script" class="collapsed">
+                    </div>
+
+                    <input id="searchButton" type="image" src="images/search.png">
+                </div>
+            </div>
+
+            <div id="scripts" class="collection"></div>
+
+            <div id="logoutPanel">
+                <span id="usernameField"></span>
+                <input id="logoutButton" type="image" src="images/logout.png">
+            </div>
+        </div>
+
+        <div id="contentPanel">
+            <h2 id="scriptHeader" class="header"></h2>
+            <p id="scriptDescription"></p>
+            <div id="parametersPanel"></div>
+            <div>
+                <button id="executeButton" class="btn">Execute</button>
+                <button id="stopButton" class="btn red lighten-1">Stop</button>
+            </div>
+            <code id="logPanel"></code>
+            <div id="validationPanel">
+                <h6 class="header">Validation failed. Errors list:</h6>
+                <ul id="validationErrorsList"></ul>
+            </div>
+            <div id="inputPanel" class="input-field">
+                <label id="inputLabel" for="inputField"></label>
+                <input id="inputField" type="text">
+            </div>
+
+            <div id="errorPanel"></div>
+        </div>
+
+        <div id="welcomePanel">
+            <img src="images/console.png" id="welcomeIcon">
+            <div id="welcomeText">
+                Welcome to the RTP Analysis Server. <br> To start, select one of the scripts
+            </div>
+            <div id="welcomeCookieText">
+                Happy RTP Debugging..
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

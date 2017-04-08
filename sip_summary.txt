@@ -1,0 +1,19 @@
+
+===================================================================
+SIP Statistics
+
+Number of SIP messages: 5
+Number of resent SIP messages: 0
+
+* SIP Status Codes in reply packets
+  SIP 180 Ringing         :     1 Packets
+  SIP 200 OK              :     2 Packets
+
+* List of SIP Request methods
+  ACK             :     1 Packets
+  BYE             :     1 Packets
+
+* Average setup time 0 ms
+ Min 0 ms
+ Max 0 ms
+===================================================================

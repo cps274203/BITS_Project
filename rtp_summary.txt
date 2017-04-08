@@ -1,0 +1,4 @@
+========================= RTP Streams ========================
+    Src IP addr  Port    Dest IP addr  Port       SSRC          Payload  Pkts         Lost   Max Delta(ms)  Max Jitter(ms) Mean Jitter(ms) Problems?
+  52.205.63.210 24016   172.31.18.204  6000 0x76349B6B ITU-T G.711 PCMA  1146     0 (0.0%)           21.67          163.93            0.06 
+==============================================================
