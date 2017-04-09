@@ -264,6 +264,7 @@ class IndexHandler(tornado.web.RequestHandler):
             myFile.write('<div id ="contentPanel" >')
             myFile.write('<h2 id="scriptHeader" class="header"> List of Audio Files</h2> \
             <p id="scriptDescription"></p>')
+            myFile.write('<div id="" style="overflow:scroll;">')
             for i in range(0, len(items), 1):
                 if 'mp3' in items[i] or 'wav' in items[i]:
                     print(i, items[0])
@@ -278,6 +279,7 @@ class IndexHandler(tornado.web.RequestHandler):
                     myFile.write('</audio>')
                     myFile.write('</p>')
                     myFile.write('<br>')
+            myFile.write('</div>')
             myFile.write('</div></div></div>')
             myFile.write('</body></html>')
             #myFile.write(text_body3)
